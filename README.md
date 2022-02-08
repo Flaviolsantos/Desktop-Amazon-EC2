@@ -23,6 +23,8 @@
 ➡️ systemctl start xrdp
 
 
+
+
 ➡️ adduser user
 
 ➡️ passwd user
