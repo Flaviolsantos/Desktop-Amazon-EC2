@@ -27,4 +27,6 @@
 
 ➡️ passwd user
 
+➡️ login user
+
 ➡️ echo "/usr/bin/mate-session" > ~/.Xclients && chmod +x ~/.Xclients
