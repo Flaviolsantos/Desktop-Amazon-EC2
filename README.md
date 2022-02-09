@@ -10,22 +10,21 @@
 
 ▶️ Instance
 
-➡️ sudo amazon-linux-extras install mate-desktop1.x
-
 ➡️ sudo amazon-linux-extras install epel
-
-➡️ sudo bash -c 'echo PREFERRED=/usr/bin/mate-session > /etc/sysconfig/desktop'
 
 ➡️ yum groupinstall "MATE Desktop"
 
-➡️ sudo yum install chromium
+➡️ sudo yum install xrdp chromium
 
-➡️ systemctl start xrdp
+➡️ systemctl enable --now xrdp
 
+#### This will make all users to have the graphic interface
+➡️ sudo bash -c 'echo PREFERRED=/usr/bin/mate-session > /etc/sysconfig/desktop'
 
-
-
+#### Exit the root
+#### This will make only a specific user to have the graphic interface
 ➡️ adduser user
 
 ➡️ passwd user
- 
+
+➡️ echo "/usr/bin/mate-session" > ~/.Xclients && chmod +x ~/.Xclients
